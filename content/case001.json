@@ -34,16 +34,17 @@
       "id": "cancion",
       "number": "03",
       "title": "Una canción",
-      "subtitle": "Carlos Vives · La Tierra del Olvido",
+      "subtitle": "Carlos Vives · La Tierra del Olvido (video oficial, 1995)",
       "kind": "video oficial del artista",
-      "sourceTitle": "Carlos Vives — La Tierra del Olvido (Official Video Remastered)",
-      "sourceUrl": "https://www.youtube.com/watch?v=-QkmEVNA-fo",
-      "sourceNote": "El canal oficial de Carlos Vives identifica «La Tierra del Olvido» y presenta el video como celebración de 25 años de la producción. Se enlaza la grabación oficial; no se copian letras.",
+      "sourceTitle": "Carlos Vives — La Tierra del Olvido (Oficial) (1995)",
+      "sourceUrl": "https://www.youtube.com/watch?v=D1OYcs9UHXk",
+      "sourceNote": "Grabación oficial publicada por el canal verificado de Carlos Vives (@carlosvives): versión oficial de 1995. El video remasterizado de 2020 no estaba disponible en la prueba de esta misión; se enlaza esta versión de la misma canción y se indica su procedencia. No se copian letras ni se redistribuye el audio.",
       "contextSource": {
         "title": "Biografía oficial de Carlos Vives — raíces musicales colombianas",
         "url": "https://carlosvives.com/biografia/"
       },
-      "task": "Escucha la grabación completa o un tramo suficiente para formar una impresión propia. Describe dos elementos audibles (por ejemplo, voz, ritmo o instrumentos) y una atmósfera. No hace falta transcribir la letra."
+      "task": "Escucha la grabación completa o un tramo suficiente para formar una impresión propia. Describe dos elementos audibles (por ejemplo, voz, ritmo o instrumentos) y una atmósfera. No hace falta transcribir la letra.",
+      "audioEmbedUrl": "https://www.youtube.com/embed/D1OYcs9UHXk"
     }
   ],
   "readingFields": [
