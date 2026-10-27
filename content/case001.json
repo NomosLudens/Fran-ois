@@ -1,0 +1,88 @@
+{
+  "id": "CASE001",
+  "title": "Expediente 001 — Bogotá, Colombia",
+  "destination": "Bogotá, Colombia",
+  "intro": "Una carpeta quedó bajo una mesa en el centro de Bogotá. No dice por qué Kaline viaja. Sólo pide distinguir lo que está comprobado de lo que todavía es una hipótesis.",
+  "clues": [
+    {
+      "id": "texto",
+      "number": "01",
+      "title": "Un texto",
+      "subtitle": "Nota encontrada en Bogotá",
+      "kind": "documento original de ficción",
+      "body": "A las 06:20, una nota escrita en español apareció en una mesa de Bogotá. Su autora no declara por qué se marcha. Deja una condición para el próximo expediente: el destino es una ciudad capital de una isla del Caribe, donde el español sea lengua oficial; el lugar pertenece a un territorio que no es un Estado soberano. La nota advierte: «Una canción puede recordar un país; un poema puede guardar una voz. Ninguna interpretación sustituye un dato verificable».",
+      "task": "Separa dos hechos que la nota afirma de una pregunta que deja abierta. No atribuyas a Kaline un motivo que el documento no menciona.",
+      "novel": {
+        "title": "Cien años de soledad",
+        "author": "Gabriel García Márquez",
+        "instruction": "Esta novela es una lectura longitudinal del curso, no una fuente incluida en el expediente. Usa tu propio ejemplar autorizado. Registra sólo el tramo que hayas leído; no subas ni pegues el libro aquí.",
+        "source": "https://www.penguinlibros.com/co/literatura-contemporanea/353999-libro-cien-anos-de-soledad-9786287638716"
+      }
+    },
+    {
+      "id": "voz",
+      "number": "02",
+      "title": "Una voz",
+      "subtitle": "Piedad Bonnett · Colombia",
+      "kind": "poesía publicada, enlazada en su fuente institucional",
+      "sourceTitle": "‘Lo terrible es el borde, no el abismo’ — recital poético de Piedad Bonnett",
+      "sourceUrl": "https://www.youtube.com/watch?v=XpOnGV6CWpI",
+      "sourceNote": "El canal institucional de Casa Amèrica Catalunya presenta a la poeta colombiana leyendo textos de su obra y conversando sobre poesía. La descripción vincula el título del recital con «En el borde». Se enlaza el video; no se copian poemas ni se presume licencia de reutilización.",
+      "task": "Escucha una lectura de Piedad en el recital. En tus palabras, registra una imagen o contraste que hayas percibido y una variación de ritmo, pausa o tono. Separa lo que oíste de lo que interpretaste; no transcribas versos."
+    },
+    {
+      "id": "cancion",
+      "number": "03",
+      "title": "Una canción",
+      "subtitle": "Carlos Vives · La Tierra del Olvido",
+      "kind": "video oficial del artista",
+      "sourceTitle": "Carlos Vives — La Tierra del Olvido (Official Video Remastered)",
+      "sourceUrl": "https://www.youtube.com/watch?v=-QkmEVNA-fo",
+      "sourceNote": "El canal oficial de Carlos Vives identifica «La Tierra del Olvido» y presenta el video como celebración de 25 años de la producción. Se enlaza la grabación oficial; no se copian letras.",
+      "contextSource": {
+        "title": "Biografía oficial de Carlos Vives — raíces musicales colombianas",
+        "url": "https://carlosvives.com/biografia/"
+      },
+      "task": "Escucha la grabación completa o un tramo suficiente para formar una impresión propia. Describe dos elementos audibles (por ejemplo, voz, ritmo o instrumentos) y una atmósfera. No hace falta transcribir la letra."
+    }
+  ],
+  "readingFields": [
+    { "id": "edition", "label": "Edición o ejemplar" },
+    { "id": "section", "label": "Capítulo, página o tramo leído" },
+    { "id": "observation", "label": "Observaciones" },
+    { "id": "interpretation", "label": "Interpretación propia" }
+  ],
+  "candidates": [
+    {
+      "city": "San Juan",
+      "jurisdiction": "Puerto Rico",
+      "facts": "Capital de Puerto Rico. Puerto Rico es un territorio de Estados Unidos en el Caribe; el español y el inglés son idiomas oficiales.",
+      "sourceTitle": "Gobierno de Puerto Rico — Sobre Puerto Rico",
+      "sourceUrl": "https://studypuertorico.pr.gov/sobre-puerto-rico",
+      "capitalSourceTitle": "Compañía de Turismo de Puerto Rico — San Juan, ciudad capital",
+      "capitalSourceUrl": "https://tourism.pr.gov/negocios/?lang=es"
+    },
+    {
+      "city": "La Habana",
+      "jurisdiction": "Cuba",
+      "facts": "Capital de Cuba, un Estado soberano.",
+      "sourceTitle": "Portal de Publicaciones de Cuba — La Habana, capital cubana",
+      "sourceUrl": "https://publicaciones.cuba.cu/economia/2024-02-23/comienza-hoy-festival-del-habano-2024/64842"
+    },
+    {
+      "city": "Santo Domingo",
+      "jurisdiction": "República Dominicana",
+      "facts": "Capital de la República Dominicana, un Estado soberano.",
+      "sourceTitle": "Ayuntamiento del Distrito Nacional — Historia",
+      "sourceUrl": "https://adn.gob.do/historia/"
+    }
+  ],
+  "puzzle": {
+    "title": "¿Cuál es la próxima ciudad?",
+    "instructions": "Ordena la evidencia: primero, la nota original de las 06:20; después, las fichas de Piedad Bonnett y Carlos Vives, que sitúan el contexto cultural colombiano, pero no nombran el próximo destino. Distingue esos hechos de la hipótesis de viaje. Contrasta la condición de la nota con las fuentes de las tres ciudades, identifica las contradicciones y justifica la deducción.",
+    "answerPrompt": "Nombre de la ciudad",
+    "reasonPrompt": "Explica el orden temporal, qué prueban (y qué no prueban) las fichas de Piedad Bonnett y Carlos Vives, y por qué las otras dos opciones contradicen la nota.",
+    "rubric": "La deducción parte de la nota de las 06:20; reconoce a Piedad Bonnett y a Carlos Vives como contexto cultural colombiano sin inferir de ahí el destino; confirma San Juan como capital de Puerto Rico, territorio de Estados Unidos con español oficial; y descarta La Habana y Santo Domingo por ser capitales de Estados soberanos."
+  },
+  "closing": "La carpeta permite proponer el destino indicado. No confirma qué hará Kaline allí ni por qué viaja. Esa parte sigue abierta."
+}
