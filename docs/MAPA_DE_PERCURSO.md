@@ -115,3 +115,23 @@ Os testes com progresso ocorreram somente em bancos isolados criados do backup c
 Arquivos desta missão: `app.js`, `server.mjs`, `styles.css`, `content/case001.json` e este mapa. Os quatro arquivos WIP não rastreados foram preservados e excluídos da alteração. Nenhum deploy foi realizado.
 
 `NEXT_EXACT_ACTION=planejar CASE 002 após revisão editorial; preservar o mistério central em aberto e manter chat/voz como bloqueios separados até configuração e validação reais.`
+
+## Missão editorial — El Atlas de las Ausencias (2026-10-27)
+
+Planejamento do primeiro ano está isolado em [`docs/LA_KALINE/`](LA_KALINE/README.md). A bíblia e a matriz são propostas; o catálogo contém somente 1.460 slots `PLANNED`, sem obras reais inventadas. Isso não adiciona capítulos jogáveis nem altera os ciclos francês/espanhol ou o SQLite.
+
+**Estado:** narrativa `PARTIAL / PROPOSTA`; matriz com 365 registros editoriais; fontes novas verificadas `0`; conteúdos jogáveis novos `0`; dias implementados/aceitos `0`. GATES E–G seguem sem execução. Nenhum fluxo diário completo foi alegado.
+
+**Draft PR #3:** continua `OPEN / DRAFT`, HEAD `ebc48baee636bbfaa9ae4486e3d2d2550025453d`. A direção tipográfica está registrada no PR como testada no navegador; permanecem pendentes aprovação estética do retrato pelo proprietário, exportação de PNGs independentes para o PR, teste de reprodução em perfil estritamente anônimo e revisão final do diff. Nenhum merge ou deploy foi feito nesta missão.
+
+O checkpoint local desta missão é a tag `checkpoint/la-kaline-atlas-365-before-20261027` no HEAD anterior da trilha CASE001. As quatro WIP preexistentes e o banco local com WAL/SHM permanecem fora desta alteração editorial.
+
+## Missão editorial — El Atlas de las Ausencias (2026-10-27)
+
+Planejamento do primeiro ano está isolado em [`docs/LA_KALINE/`](LA_KALINE/README.md). A bíblia e a matriz são propostas; o catálogo contém somente 1.460 slots `PLANNED`, sem obras reais inventadas. Isso não adiciona capítulos jogáveis nem altera os ciclos francês/espanhol ou o SQLite.
+
+**Estado:** narrativa `PARTIAL / PROPOSTA`; matriz com 365 registros editoriais; fontes novas verificadas `0`; conteúdos jogáveis novos `0`; dias implementados/aceitos `0`. GATES E–G seguem sem execução. Nenhum fluxo diário completo foi alegado.
+
+**Draft PR #3:** continua `OPEN / DRAFT`, HEAD `ebc48baee636bbfaa9ae4486e3d2d2550025453d`. A direção tipográfica consta como carregada no navegador no relatório do PR; permanecem pendentes aprovação estética do retrato pelo proprietário, exportação de PNGs independentes para o PR, teste de reprodução em perfil estritamente anônimo e revisão final do diff. Nenhum merge ou deploy foi feito nesta missão.
+
+O checkpoint local desta missão é a tag `checkpoint/la-kaline-atlas-365-before-20261027` no HEAD anterior da trilha CASE001. As quatro WIP preexistentes e o banco local com WAL/SHM permanecem fora desta alteração editorial.

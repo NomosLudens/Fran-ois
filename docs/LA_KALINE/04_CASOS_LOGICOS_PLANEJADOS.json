@@ -1,0 +1,2002 @@
+{
+  "schema_version": "1.0-proposal",
+  "count": 35,
+  "warning": "Estes 35 registros descrevem o formato e a pergunta investigativa. Premissas são ficcionais propostas; soluções e gabaritos continuam nulos. Não usar como cases executáveis.",
+  "cases": [
+    {
+      "case_id": "CASO_001",
+      "expedition_id": "EXP001",
+      "city": "Bogotá",
+      "problem_statement": "Caso 001: El sobre sin remitente lleva una fotografía, un mapa incompleto y la hora 06:20; aún no sabemos qué mide. Formular una conclusión limitada compatible con los registros disponibles en Bogotá, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-001-02",
+          "claim": "La fuente inicial registra el sobre y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-001-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El sobre sin remitente lleva una fotografía, un mapa incompleto y la hora 06:20; aún no sabemos qué mide.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-001-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-001-01",
+        "EVID-001-02",
+        "EVID-001-07",
+        "EVID-001-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el sobre y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La segunda firma».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_002",
+      "expedition_id": "EXP002",
+      "city": "Medellín",
+      "problem_statement": "Caso 002: La firma del reverso cambia la cadena de custodia de la primera carta, pero no identifica a quien la puso. Formular una conclusión limitada compatible con los registros disponibles en Medellín, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-002-02",
+          "claim": "La fuente inicial registra la firma y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-002-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: La firma del reverso cambia la cadena de custodia de la primera carta, pero no identifica a quien la puso.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-002-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-002-01",
+        "EVID-002-02",
+        "EVID-002-07",
+        "EVID-002-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la firma y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La ruta de las alturas».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_003",
+      "expedition_id": "EXP003",
+      "city": "Cusco",
+      "problem_statement": "Caso 003: El croquis confunde origen y destino; la referencia patrimonial requiere investigación aparte y no es una pista conspirativa. Formular una conclusión limitada compatible con los registros disponibles en Cusco, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-003-02",
+          "claim": "La fuente inicial registra el croquis y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-003-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El croquis confunde origen y destino; la referencia patrimonial requiere investigación aparte y no es una pista conspirativa.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-003-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-003-01",
+        "EVID-003-02",
+        "EVID-003-07",
+        "EVID-003-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el croquis y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Dos lenguas, una pista».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_004",
+      "expedition_id": "EXP004",
+      "city": "Asunción",
+      "problem_statement": "Caso 004: Dos versiones de una nota alternan español y guaraní; ninguna traducción puede atribuirse sin fuente y autoría. Formular una conclusión limitada compatible con los registros disponibles en Asunción, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-004-02",
+          "claim": "La fuente inicial registra la nota bilingüe y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-004-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Dos versiones de una nota alternan español y guaraní; ninguna traducción puede atribuirse sin fuente y autoría.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-004-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-004-01",
+        "EVID-004-02",
+        "EVID-004-07",
+        "EVID-004-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la nota bilingüe y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Las palabras ausentes».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_005",
+      "expedition_id": "EXP005",
+      "city": "Montevideo",
+      "problem_statement": "Caso 005: Los recortes numerados de una carta prueban una ausencia material, no las palabras que faltan. Formular una conclusión limitada compatible con los registros disponibles en Montevideo, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-005-02",
+          "claim": "La fuente inicial registra la carta recortada y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-005-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Los recortes numerados de una carta prueban una ausencia material, no las palabras que faltan.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-005-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-005-01",
+        "EVID-005-02",
+        "EVID-005-07",
+        "EVID-005-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la carta recortada y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El testigo del andén».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_006",
+      "expedition_id": "EXP006",
+      "city": "Buenos Aires",
+      "problem_statement": "Caso 006: Dos testimonios ubican el mismo objeto en horarios incompatibles; faltan datos sobre reloj y posición. Formular una conclusión limitada compatible con los registros disponibles en Buenos Aires, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-006-02",
+          "claim": "La fuente inicial registra el billete de andén y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-006-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Dos testimonios ubican el mismo objeto en horarios incompatibles; faltan datos sobre reloj y posición.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-006-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-006-01",
+        "EVID-006-02",
+        "EVID-006-07",
+        "EVID-006-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el billete de andén y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Los siete puntos».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_007",
+      "expedition_id": "EXP007",
+      "city": "Ciudad de México",
+      "problem_statement": "Caso 007: Siete perforaciones del mapa forman un patrón solo si orientación y escala se mantienen constantes. Formular una conclusión limitada compatible con los registros disponibles en Ciudad de México, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-007-02",
+          "claim": "La fuente inicial registra el mapa perforado y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-007-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Siete perforaciones del mapa forman un patrón solo si orientación y escala se mantienen constantes.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-007-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-007-01",
+        "EVID-007-02",
+        "EVID-007-07",
+        "EVID-007-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el mapa perforado y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El periódico incompleto».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_008",
+      "expedition_id": "EXP008",
+      "city": "Oaxaca",
+      "problem_statement": "Caso 008: El recorte de periódico conserva cabecera y paginación, pero no basta para probar fecha ni circulación. Formular una conclusión limitada compatible con los registros disponibles en Oaxaca, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-008-02",
+          "claim": "La fuente inicial registra el recorte de prensa y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-008-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El recorte de periódico conserva cabecera y paginación, pero no basta para probar fecha ni circulación.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-008-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-008-01",
+        "EVID-008-02",
+        "EVID-008-07",
+        "EVID-008-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el recorte de prensa y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La misma letra».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_009",
+      "expedition_id": "EXP009",
+      "city": "Ciudad de Guatemala",
+      "problem_statement": "Caso 009: Dos notas se parecen en caligrafía, aunque tinta y soporte difieren; la semejanza no prueba autoría común. Formular una conclusión limitada compatible con los registros disponibles en Ciudad de Guatemala, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-009-02",
+          "claim": "La fuente inicial registra las dos notas manuscritas y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-009-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Dos notas se parecen en caligrafía, aunque tinta y soporte difieren; la semejanza no prueba autoría común.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-009-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-009-01",
+        "EVID-009-02",
+        "EVID-009-07",
+        "EVID-009-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con las dos notas manuscritas y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Antes de la lluvia».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_010",
+      "expedition_id": "EXP010",
+      "city": "Antigua Guatemala",
+      "problem_statement": "Caso 010: Un recibo conserva la fecha y parte del sello; la porción borrada no se completa por conjetura. Formular una conclusión limitada compatible con los registros disponibles en Antigua Guatemala, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-010-02",
+          "claim": "La fuente inicial registra el recibo sellado y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-010-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Un recibo conserva la fecha y parte del sello; la porción borrada no se completa por conjetura.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-010-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-010-01",
+        "EVID-010-02",
+        "EVID-010-07",
+        "EVID-010-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el recibo sellado y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La declaración».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_011",
+      "expedition_id": "EXP011",
+      "city": "San Salvador",
+      "problem_statement": "Caso 011: Una declaración mezcla observación directa y relato ajeno; cada frase debe atribuirse a su fuente. Formular una conclusión limitada compatible con los registros disponibles en San Salvador, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-011-02",
+          "claim": "La fuente inicial registra la declaración y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-011-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una declaración mezcla observación directa y relato ajeno; cada frase debe atribuirse a su fuente.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-011-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-011-01",
+        "EVID-011-02",
+        "EVID-011-07",
+        "EVID-011-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la declaración y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El número perdido».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_012",
+      "expedition_id": "EXP012",
+      "city": "Tegucigalpa",
+      "problem_statement": "Caso 012: La serie de cajas tiene un número ausente; no se infiere el registro faltante sin regla de catalogación. Formular una conclusión limitada compatible con los registros disponibles en Tegucigalpa, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-012-02",
+          "claim": "La fuente inicial registra el índice de cajas y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-012-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: La serie de cajas tiene un número ausente; no se infiere el registro faltante sin regla de catalogación.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-012-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-012-01",
+        "EVID-012-02",
+        "EVID-012-07",
+        "EVID-012-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el índice de cajas y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Medianoche».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_013",
+      "expedition_id": "EXP013",
+      "city": "Managua",
+      "problem_statement": "Caso 013: Dos relojes anotan medianoche sin zona ni sincronización; la cronología debe conservar ese margen. Formular una conclusión limitada compatible con los registros disponibles en Managua, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-013-02",
+          "claim": "La fuente inicial registra el registro horario y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-013-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Dos relojes anotan medianoche sin zona ni sincronización; la cronología debe conservar ese margen.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-013-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-013-01",
+        "EVID-013-02",
+        "EVID-013-07",
+        "EVID-013-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el registro horario y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La copia distinta».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_014",
+      "expedition_id": "EXP014",
+      "city": "San José",
+      "problem_statement": "Caso 014: Una copia cambia puntuación y orden; la comparación localiza la variante, pero no demuestra quién la alteró. Formular una conclusión limitada compatible con los registros disponibles en San José, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-014-02",
+          "claim": "La fuente inicial registra la copia corregida y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-014-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una copia cambia puntuación y orden; la comparación localiza la variante, pero no demuestra quién la alteró.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-014-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-014-01",
+        "EVID-014-02",
+        "EVID-014-07",
+        "EVID-014-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la copia corregida y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El equipaje sin nombre».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_015",
+      "expedition_id": "EXP015",
+      "city": "Ciudad de Panamá",
+      "problem_statement": "Caso 015: Una etiqueta de equipaje enlaza dos trayectos mediante un código, no mediante identidad personal. Formular una conclusión limitada compatible con los registros disponibles en Ciudad de Panamá, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-015-02",
+          "claim": "La fuente inicial registra la etiqueta de equipaje y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-015-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una etiqueta de equipaje enlaza dos trayectos mediante un código, no mediante identidad personal.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-015-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-015-01",
+        "EVID-015-02",
+        "EVID-015-07",
+        "EVID-015-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la etiqueta de equipaje y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La dirección equivocada».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_016",
+      "expedition_id": "EXP016",
+      "city": "Cartagena",
+      "problem_statement": "Caso 016: Un sobre redirigido tiene una corrección de domicilio; la dirección errónea no demuestra quién lo envió. Formular una conclusión limitada compatible con los registros disponibles en Cartagena, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-016-02",
+          "claim": "La fuente inicial registra el sobre redirigido y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-016-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Un sobre redirigido tiene una corrección de domicilio; la dirección errónea no demuestra quién lo envió.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-016-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-016-01",
+        "EVID-016-02",
+        "EVID-016-07",
+        "EVID-016-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el sobre redirigido y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La voz en la radio».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_017",
+      "expedition_id": "EXP017",
+      "city": "Caracas",
+      "problem_statement": "Caso 017: Una ficha de radio registra el inicio y el final de una grabación, con un tramo central ausente que no se reconstruye. Formular una conclusión limitada compatible con los registros disponibles en Caracas, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-017-02",
+          "claim": "La fuente inicial registra la ficha de grabación y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-017-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una ficha de radio registra el inicio y el final de una grabación, con un tramo central ausente que no se reconstruye.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-017-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-017-01",
+        "EVID-017-02",
+        "EVID-017-07",
+        "EVID-017-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la ficha de grabación y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La habitación cerrada».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_018",
+      "expedition_id": "EXP018",
+      "city": "Santo Domingo",
+      "problem_statement": "Caso 018: El inventario y una fotografía posterior difieren; fecha, turno y encuadre pueden explicar la discrepancia. Formular una conclusión limitada compatible con los registros disponibles en Santo Domingo, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-018-02",
+          "claim": "La fuente inicial registra el inventario y fotografía y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-018-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El inventario y una fotografía posterior difieren; fecha, turno y encuadre pueden explicar la discrepancia.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-018-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-018-01",
+        "EVID-018-02",
+        "EVID-018-07",
+        "EVID-018-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el inventario y fotografía y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La canción y el mensaje».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_019",
+      "expedition_id": "EXP019",
+      "city": "San Juan",
+      "problem_statement": "Caso 019: Una ficha de escucha vincula un registro horario con una grabación que aún requiere selección, acceso y prueba reales. Formular una conclusión limitada compatible con los registros disponibles en San Juan, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-019-02",
+          "claim": "La fuente inicial registra la ficha de escucha y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-019-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una ficha de escucha vincula un registro horario con una grabación que aún requiere selección, acceso y prueba reales.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-019-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-019-01",
+        "EVID-019-02",
+        "EVID-019-07",
+        "EVID-019-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la ficha de escucha y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La cinta».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_020",
+      "expedition_id": "EXP020",
+      "city": "La Habana",
+      "problem_statement": "Caso 020: Dos números identifican una cinta, pero solo consta un préstamo; el soporte no identifica al usuario. Formular una conclusión limitada compatible con los registros disponibles en La Habana, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-020-02",
+          "claim": "La fuente inicial registra el registro de cinta y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-020-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Dos números identifican una cinta, pero solo consta un préstamo; el soporte no identifica al usuario.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-020-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-020-01",
+        "EVID-020-02",
+        "EVID-020-07",
+        "EVID-020-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el registro de cinta y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El sonido que falta».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_021",
+      "expedition_id": "EXP021",
+      "city": "Santiago de Cuba",
+      "problem_statement": "Caso 021: El informe de conservación registra un intervalo silencioso; el silencio no permite inventar palabras omitidas. Formular una conclusión limitada compatible con los registros disponibles en Santiago de Cuba, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-021-02",
+          "claim": "La fuente inicial registra el informe sonoro y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-021-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El informe de conservación registra un intervalo silencioso; el silencio no permite inventar palabras omitidas.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-021-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-021-01",
+        "EVID-021-02",
+        "EVID-021-07",
+        "EVID-021-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el informe sonoro y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El punto de observación».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_022",
+      "expedition_id": "EXP022",
+      "city": "Quito",
+      "problem_statement": "Caso 022: El dibujo cambia según el punto de observación y carece de origen cartográfico declarado. Formular una conclusión limitada compatible con los registros disponibles en Quito, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-022-02",
+          "claim": "La fuente inicial registra el dibujo cartográfico y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-022-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El dibujo cambia según el punto de observación y carece de origen cartográfico declarado.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-022-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-022-01",
+        "EVID-022-02",
+        "EVID-022-07",
+        "EVID-022-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el dibujo cartográfico y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El archivo de familia».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_023",
+      "expedition_id": "EXP023",
+      "city": "Cuenca",
+      "problem_statement": "Caso 023: El expediente familiar ficticio reúne documentos y memoria oral; su uso dentro del juego requiere procedencia definida, permiso narrativo y separación entre testimonio y hecho. Formular una conclusión limitada compatible con los registros disponibles en Cuenca, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-023-02",
+          "claim": "La fuente inicial registra el archivo familiar y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-023-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El expediente familiar ficticio reúne documentos y memoria oral; su uso dentro del juego requiere procedencia definida, permiso narrativo y separación entre testimonio y hecho.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-023-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-023-01",
+        "EVID-023-02",
+        "EVID-023-07",
+        "EVID-023-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el archivo familiar y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El índice roto».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_024",
+      "expedition_id": "EXP024",
+      "city": "Lima",
+      "problem_statement": "Caso 024: Las remisiones recíprocas del índice permiten ordenar fichas aunque falte una parte física. Formular una conclusión limitada compatible con los registros disponibles en Lima, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-024-02",
+          "claim": "La fuente inicial registra el índice roto y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-024-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Las remisiones recíprocas del índice permiten ordenar fichas aunque falte una parte física.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-024-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-024-01",
+        "EVID-024-02",
+        "EVID-024-07",
+        "EVID-024-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el índice roto y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La traducción».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_025",
+      "expedition_id": "EXP025",
+      "city": "La Paz",
+      "problem_statement": "Caso 025: Dos traducciones alteran el sujeto de un billete; solo el original disponible delimita esa lectura. Formular una conclusión limitada compatible con los registros disponibles en La Paz, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-025-02",
+          "claim": "La fuente inicial registra el billete traducido y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-025-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Dos traducciones alteran el sujeto de un billete; solo el original disponible delimita esa lectura.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-025-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-025-01",
+        "EVID-025-02",
+        "EVID-025-07",
+        "EVID-025-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el billete traducido y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La prueba y la presunción».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_026",
+      "expedition_id": "EXP026",
+      "city": "Sucre",
+      "problem_statement": "Caso 026: El informe separa observación de presunción; la conclusión debe mantener ambas categorías visibles. Formular una conclusión limitada compatible con los registros disponibles en Sucre, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-026-02",
+          "claim": "La fuente inicial registra el informe de prueba y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-026-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El informe separa observación de presunción; la conclusión debe mantener ambas categorías visibles.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-026-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-026-01",
+        "EVID-026-02",
+        "EVID-026-07",
+        "EVID-026-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el informe de prueba y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Los nombres escritos».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_027",
+      "expedition_id": "EXP027",
+      "city": "Santiago de Chile",
+      "problem_statement": "Caso 027: Una lista contiene variantes de nombres sin identificador independiente para afirmar que son la misma persona. Formular una conclusión limitada compatible con los registros disponibles en Santiago de Chile, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-027-02",
+          "claim": "La fuente inicial registra la lista nominal y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-027-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una lista contiene variantes de nombres sin identificador independiente para afirmar que son la misma persona.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-027-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-027-01",
+        "EVID-027-02",
+        "EVID-027-07",
+        "EVID-027-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la lista nominal y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La página arrancada».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_028",
+      "expedition_id": "EXP028",
+      "city": "Valparaíso",
+      "problem_statement": "Caso 028: La encuadernación muestra dónde se extrajo una página, no qué decía. Formular una conclusión limitada compatible con los registros disponibles en Valparaíso, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-028-02",
+          "claim": "La fuente inicial registra la encuadernación y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-028-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: La encuadernación muestra dónde se extrajo una página, no qué decía.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-028-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-028-01",
+        "EVID-028-02",
+        "EVID-028-07",
+        "EVID-028-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la encuadernación y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La primera travesía».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_029",
+      "expedition_id": "EXP029",
+      "city": "Sevilla",
+      "problem_statement": "Caso 029: El manifiesto describe rutas posibles; no prueba cuál se recorrió efectivamente. Formular una conclusión limitada compatible con los registros disponibles en Sevilla, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-029-02",
+          "claim": "La fuente inicial registra el manifiesto y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-029-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El manifiesto describe rutas posibles; no prueba cuál se recorrió efectivamente.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-029-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-029-01",
+        "EVID-029-02",
+        "EVID-029-07",
+        "EVID-029-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el manifiesto y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El poema y la ausencia».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_030",
+      "expedition_id": "EXP030",
+      "city": "Granada",
+      "problem_statement": "Caso 030: La lectura de un poema permite examinar voz y elipsis; no aporta por sí sola un dato geográfico. Formular una conclusión limitada compatible con los registros disponibles en Granada, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-030-02",
+          "claim": "La fuente inicial registra la anotación de lectura y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-030-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: La lectura de un poema permite examinar voz y elipsis; no aporta por sí sola un dato geográfico.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-030-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-030-01",
+        "EVID-030-02",
+        "EVID-030-07",
+        "EVID-030-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la anotación de lectura y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La pregunta de Unamuno».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_031",
+      "expedition_id": "EXP031",
+      "city": "Salamanca",
+      "problem_statement": "Caso 031: Una ficha sobre Unamuno y una pregunta del expediente comparten una referencia, no una autoría. Formular una conclusión limitada compatible con los registros disponibles en Salamanca, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-031-02",
+          "claim": "La fuente inicial registra la ficha bibliográfica y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-031-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una ficha sobre Unamuno y una pregunta del expediente comparten una referencia, no una autoría.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-031-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-031-01",
+        "EVID-031-02",
+        "EVID-031-07",
+        "EVID-031-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con la ficha bibliográfica y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La circunstancia».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_032",
+      "expedition_id": "EXP032",
+      "city": "Madrid",
+      "problem_statement": "Caso 032: Un memorando omite el lugar de producción; el contexto limita hipótesis, no rellena el campo. Formular una conclusión limitada compatible con los registros disponibles en Madrid, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-032-02",
+          "claim": "La fuente inicial registra el memorando y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-032-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Un memorando omite el lugar de producción; el contexto limita hipótesis, no rellena el campo.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-032-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-032-01",
+        "EVID-032-02",
+        "EVID-032-07",
+        "EVID-032-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el memorando y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La ciudad de muchas lenguas».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_033",
+      "expedition_id": "EXP033",
+      "city": "Barcelona",
+      "problem_statement": "Caso 033: Un registro alterna lenguas y traducciones atribuidas; la diferencia no es automáticamente un error. Formular una conclusión limitada compatible con los registros disponibles en Barcelona, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-033-02",
+          "claim": "La fuente inicial registra el cuadro de versiones y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-033-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Un registro alterna lenguas y traducciones atribuidas; la diferencia no es automáticamente un error.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-033-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-033-01",
+        "EVID-033-02",
+        "EVID-033-07",
+        "EVID-033-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el cuadro de versiones y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «El último testigo».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_034",
+      "expedition_id": "EXP034",
+      "city": "Bilbao",
+      "problem_statement": "Caso 034: El último testigo corrige su declaración y adjunta el documento que motivó el cambio. Formular una conclusión limitada compatible con los registros disponibles en Bilbao, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-034-02",
+          "claim": "La fuente inicial registra el testimonio rectificado y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-034-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El último testigo corrige su declaración y adjunta el documento que motivó el cambio.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-034-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-034-01",
+        "EVID-034-02",
+        "EVID-034-07",
+        "EVID-034-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el testimonio rectificado y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La otra orilla del español».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    },
+    {
+      "case_id": "CASO_035",
+      "expedition_id": "EXP035",
+      "city": "Malabo",
+      "problem_statement": "Caso 035: El índice reconstruido devuelve la investigación a Bogotá, aunque una página continúa ausente. Formular una conclusión limitada compatible con los registros disponibles en Malabo, sin rellenar lagunas ni presumir autoría.",
+      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "premises": [
+        {
+          "evidence_id": "EVID-035-02",
+          "claim": "La fuente inicial registra el índice del atlas y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-035-07",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El índice reconstruido devuelve la investigación a Bogotá, aunque una página continúa ausente.",
+          "source_type": "documento ficcional original planejado"
+        },
+        {
+          "evidence_id": "EVID-035-09",
+          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
+          "source_type": "documento ficcional original planejado"
+        }
+      ],
+      "source_ids": [
+        "EVID-035-01",
+        "EVID-035-02",
+        "EVID-035-07",
+        "EVID-035-09"
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "statement": "H1: explicación mínima compatible con el índice del atlas y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+        },
+        {
+          "hypothesis_id": "H2",
+          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
+          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+        }
+      ],
+      "solution": null,
+      "demonstration": null,
+      "accepted_answers": [],
+      "expected_errors": [
+        "confundir semejanza con identidad",
+        "tratar testimonio como hecho confirmado",
+        "rellenar datos ausentes",
+        "ignorar procedencia o cronología"
+      ],
+      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
+      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «Regreso a Bogotá».",
+      "source_status": "PLANNED",
+      "editorial_status": "PROPOSAL",
+      "implementation_status": "NOT_STARTED",
+      "manual_acceptance": "NOT_RUN"
+    }
+  ]
+}
