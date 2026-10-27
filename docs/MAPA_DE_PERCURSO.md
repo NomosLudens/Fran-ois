@@ -115,3 +115,20 @@ Os testes com progresso ocorreram somente em bancos isolados criados do backup c
 Arquivos desta missão: `app.js`, `server.mjs`, `styles.css`, `content/case001.json` e este mapa. Os quatro arquivos WIP não rastreados foram preservados e excluídos da alteração. Nenhum deploy foi realizado.
 
 `NEXT_EXACT_ACTION=planejar CASE 002 após revisão editorial; preservar o mistério central em aberto e manter chat/voz como bloqueios separados até configuração e validação reais.`
+
+
+### RETROGAME — Expediente 001 — 2026-10-27
+
+| Gate | Estado | Evidência / limite |
+|---|---|---|
+| Direção visual | PARTIAL | A tela inicial e o expediente usam cenário original de Bogotá gerado para este projeto, paleta noturna, tipografia monoespaçada e diálogo. Retrato pixelado derivado da referência local está em revisão estética; não houve aprovação final nem merge. |
+| Navegação | PASS local | No Chrome/IAB, CONTINUAR e EXPEDIENTE 001 abrem o caso, MAPA revela o destino só depois da dedução e CUADERNO lê nota/palavras do estado SQLite. O mapa é esquemático, não cartografia geográfica. |
+| Músicas | PARTIAL | A versão remasterizada de 2020 (`-QkmEVNA-fo`) retornou “Este vídeo não está disponível” no player incorporado do Chrome. A versão oficial de 1995 (`D1OYcs9UHXk`), publicada pelo canal verificado de Carlos Vives, tocou no player incorporado: o vídeo avançou e mostrou imagens da gravação. Não foi exigido novo login durante a reprodução; o perfil do navegador pode estar autenticado, então a condição anônima não foi provada isoladamente. A troca e sua proveniência estão explícitas em `content/case001.json`; não se copiam nem redistribuem letras/áudio. |
+| Poesia | PASS de acesso | O link abriu o recital de Piedad Bonnett no canal Casa Amèrica Catalunya. A página identificou a poeta e a descrição do recital; não se copiaram versos. A tarefa mantém a interpretação auditável do estudante. |
+| Caso / SQLite | PARTIAL nesta rodada | Teste manual no Chrome e IAB usou apenas cópia isolada `/tmp/la-kaline-case-001-retrogame/francois-test.sqlite`; `PRAGMA integrity_check=ok`, quatro sessões francesas preexistentes. O início do expediente persistiu e retornou após reload. O proprietário e o servidor 4173 não foram usados. Não houve nova conclusão do enigma nesta rodada; o percurso integral de CASE001 havia sido registrado como PASS na missão GENESIS. |
+| Desktop / mobile | PARTIAL | Cena, player e rotas foram conferidos no navegador desktop. O breakpoint mobile está implementado em CSS, mas 390×844 não foi validado nesta rodada. |
+| Proteção / WIP | PASS local | Sem banco, `.env` ou imagem-fonte privada incluídos. Quatro arquivos WIP permanecem sem alteração e fora do escopo do commit. Nenhum deploy ou escrita em produção. |
+
+Arquivos da missão: `app.js`, `server.mjs`, `styles.css`, `content/case001.json`, `README.md`, este documento e duas artes novas em `assets/`. A arte de cena não representa mapa factual exato. O retrato de Kaline permanece sujeito à aprovação estética do proprietário. O veredito da rodada é `PARTIAL` até a validação mobile, aprovação do retrato e revisão da publicação; não declarar missão concluída.
+
+`NEXT_EXACT_ACTION=aprovar ou rejeitar o retrato pixelado; em seguida validar 390×844 e revisar o PR antes de qualquer merge.`

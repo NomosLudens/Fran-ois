@@ -1,6 +1,6 @@
 # La Kaline — Tu español, a tu manera
 
-Aplicativo local-first para aprender espanhol com atividades curtas de leitura, escuta, conversa e gramática. O acervo francês original permanece disponível como segundo idioma. A direção aprovada prevê transformar LA KALINE em um jogo narrativo original de investigação; o jogo ainda não está implementado. Consulte [docs/MAPA_DE_PERCURSO.md](docs/MAPA_DE_PERCURSO.md) para propostas e estado real.
+Aplicativo local-first para aprender espanhol por meio de LA KALINE, uma aventura narrativa de investigação. O Expediente 001 em Bogotá combina documento ficcional original, recital institucional, gravação oficial de Carlos Vives e um enigma determinístico. O acervo francês permanece disponível como segundo idioma. Consulte [docs/MAPA_DE_PERCURSO.md](docs/MAPA_DE_PERCURSO.md) para estado, proveniência e limites de validação.
 
 ## Iniciar
 
@@ -24,4 +24,4 @@ O progresso francês legado recebe `language='fr'` em uma migração aditiva do 
 
 ## Limites atuais
 
-O catálogo espanhol é um piloto de quatro atividades, não um curso completo nem uma avaliação diagnóstica de proficiência. A conversa e a voz dependem da chave OpenRouter e precisam ser testadas com serviços configurados. A escuta abre o vídeo institucional no YouTube; a disponibilidade depende do serviço e da rede do estudante. Consulte [docs/MAPA_DE_PERCURSO.md](docs/MAPA_DE_PERCURSO.md) para o estado de validação e pendências.
+O catálogo espanhol é um piloto de quatro atividades, não um curso completo nem uma avaliação diagnóstica de proficiência. O chat depende da chave OpenRouter. O Expediente 001 usa áudio oficial incorporado do YouTube; disponibilidade e reprodução dependem do serviço e da rede do estudante. A interface do jogo está em revisão estética e a validação mobile 390×844 ainda está pendente. Consulte [docs/MAPA_DE_PERCURSO.md](docs/MAPA_DE_PERCURSO.md) para a evidência atual.
