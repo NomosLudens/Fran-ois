@@ -570,6 +570,10 @@
 - Interprète / création / année / genre : Édith Piaf / crédits à vérifier pour l’enregistrement choisi / 1946 / chanson française
 - Référence : https://catalogue.bnf.fr/rechercher.do?motRecherche=La+Vie+en+rose+%C3%89dith+Piaf
 - Écoute : [recherche Spotify](https://open.spotify.com/search/La+Vie+en+rose+%C3%89dith+Piaf) (lien de recherche, pas validation d’un enregistrement précis)
+- Enregistrement sélectionné : [YouTube · Edith Piaf Officiel (canal officiel de l’artiste)](https://www.youtube.com/watch?v=r3Ge6kOEUtI)
+- Provenance : Édith Piaf, La vie en rose, distribution affichée par YouTube : Naxos Digital Services; publiée sur le canal officiel Edith Piaf Officiel, vidéo r3Ge6kOEUtI; même interprète et chanson du catalogue.
+- Licence / accès audio : Lecture en flux sur le canal officiel YouTube; l’enregistrement et l’œuvre restent protégés et ne sont pas redistribués par François.
+- Paroles licenciées : [Paroles.net](https://www.paroles.net/edith-piaf/paroles-vie-en-rose-la); Paroles.net indique un accord de licence des paroles avec la SEAM; François renvoie vers cette page et ne reproduit pas les paroles.
 - Thème / difficulté : mémoire et désir / A2
 - Vocabulaire : Relevez 5 mots entendus; vérifiez-les dans une source lexicographique. Les paroles ne sont pas reproduites.
 - Métaphores : Notez une image entendue et formulez séparément son sens littéral et une interprétation possible.
@@ -577,7 +581,7 @@
 - Prononciation : Écoutez une phrase courte; notez les e muets, les voyelles nasales et le débit propre à l’interprète.
 - Liaisons / élisions : Repérez une liaison audible et une élision; ne déduisez pas les paroles d’une transcription automatique sans vérification.
 - Grammaire : négation
-- Compréhension : À la première écoute, notez le sujet et le changement d’atmosphère; à la seconde, relevez trois mots réellement entendus.
+- Compréhension : Après une première écoute, ouvrez la page de paroles licenciée puis réécoutez l’enregistrement officiel en suivant le texte. Repérez trois mots que vous entendez et décrivez l’évolution de l’atmosphère.
 - Chant : Choisissez 10–15 secondes de la source autorisée, chantez avec l’enregistrement puis comparez votre propre prise.
 - Critère : Résumez le propos en deux phrases et associez au moins trois mots notés à des moments précis de l’écoute.
 
