@@ -139,9 +139,10 @@ const caseAnswerCorrect = (answer, rationale) => {
   const excludesHavana = /\b(la habana|cuba)\b/.test(reason);
   const excludesSantoDomingo = /\b(santo domingo|republica dominicana)\b/.test(reason);
   const explainsSovereignty = reason.includes('soberano') && /\b(no|nao|not)\b/.test(reason) && /descart|no cumple|no satisface/.test(reason);
-  const usesThreeClues = reason.includes('06 20') && reason.includes('piedad bonnett') && reason.includes('carlos vives');
+  const usesThreeClues = reason.includes('06 20') && reason.includes('cien anos de soledad') && reason.includes('garcia marquez') && reason.includes('piedad bonnett') && reason.includes('la tierra del olvido') && reason.includes('carlos vives');
+  const establishesCulturalProvenance = reason.includes('colomb') && /contexto cultural|procedencia cultural/.test(reason);
   const separatesContext = /contexto|no (indica|nombra|determina|demuestra|prueba)/.test(reason);
-  return destination && puertoRicoFacts && excludesHavana && excludesSantoDomingo && explainsSovereignty && usesThreeClues && separatesContext;
+  return destination && puertoRicoFacts && excludesHavana && excludesSantoDomingo && explainsSovereignty && usesThreeClues && establishesCulturalProvenance && separatesContext;
 };
 const validSessionId = id => Boolean(validItem(id) || (languageFor(id)==='fr' && /^SARTRE-\d{2}$/.test(id||'')));
 const itemType = id => {

@@ -28,6 +28,9 @@
       "sourceTitle": "‘Lo terrible es el borde, no el abismo’ — recital poético de Piedad Bonnett",
       "sourceUrl": "https://www.youtube.com/watch?v=XpOnGV6CWpI",
       "sourceNote": "El canal institucional de Casa Amèrica Catalunya presenta a la poeta colombiana leyendo textos de su obra y conversando sobre poesía. La descripción vincula el título del recital con «En el borde». Se enlaza el video; no se copian poemas ni se presume licencia de reutilización.",
+      "contextSources": [
+        { "title": "Casa de América — Piedad Bonnett (Colombia)", "url": "https://www.casamerica.es/literatura/la-poesia-tiene-la-palabra" }
+      ],
       "task": "Escucha una lectura de Piedad en el recital. En tus palabras, registra una imagen o contraste que hayas percibido y una variación de ritmo, pausa o tono. Separa lo que oíste de lo que interpretaste; no transcribas versos."
     },
     {
@@ -39,10 +42,10 @@
       "sourceTitle": "Carlos Vives — La Tierra del Olvido (Oficial) (1995)",
       "sourceUrl": "https://www.youtube.com/watch?v=D1OYcs9UHXk",
       "sourceNote": "Grabación oficial publicada por el canal verificado de Carlos Vives (@carlosvives): versión oficial de 1995. El video remasterizado de 2020 no estaba disponible en la prueba de esta misión; se enlaza esta versión de la misma canción y se indica su procedencia. No se copian letras ni se redistribuye el audio.",
-      "contextSource": {
-        "title": "Biografía oficial de Carlos Vives — raíces musicales colombianas",
-        "url": "https://carlosvives.com/biografia/"
-      },
+      "contextSources": [
+        { "title": "Biografía oficial — Carlos Vives, colombiano", "url": "https://carlosvives.com/biografia/" },
+        { "title": "Discografía oficial — La Tierra del Olvido (1995)", "url": "https://carlosvives.com/discografia/" }
+      ],
       "task": "Escucha la grabación completa o un tramo suficiente para formar una impresión propia. Describe dos elementos audibles (por ejemplo, voz, ritmo o instrumentos) y una atmósfera. No hace falta transcribir la letra.",
       "audioEmbedUrl": "https://www.youtube.com/embed/D1OYcs9UHXk"
     }
@@ -80,10 +83,10 @@
   ],
   "puzzle": {
     "title": "¿Cuál es la próxima ciudad?",
-    "instructions": "Ordena la evidencia: primero, la nota original de las 06:20; después, las fichas de Piedad Bonnett y Carlos Vives, que sitúan el contexto cultural colombiano, pero no nombran el próximo destino. Distingue esos hechos de la hipótesis de viaje. Contrasta la condición de la nota con las fuentes de las tres ciudades, identifica las contradicciones y justifica la deducción.",
+    "instructions": "Construye la cadena en dos partes. Primero verifica la procedencia cultural colombiana de las tres actividades: la ficha editorial identifica Cien años de soledad y a Gabriel García Márquez; la fuente institucional presenta a Piedad Bonnett como poeta colombiana; la discografía oficial identifica La Tierra del Olvido (1995), de Carlos Vives. Estas fuentes conectan lectura, poesía y música con el contexto de la carpeta, pero no indican el destino. Después contrasta la nota original de las 06:20 con las fuentes públicas de las tres ciudades. Explica qué evidencia establece la procedencia y cuál permite deducir el destino.",
     "answerPrompt": "Nombre de la ciudad",
-    "reasonPrompt": "Explica el orden temporal, qué prueban (y qué no prueban) las fichas de Piedad Bonnett y Carlos Vives, y por qué las otras dos opciones contradicen la nota.",
-    "rubric": "La deducción parte de la nota de las 06:20; reconoce a Piedad Bonnett y a Carlos Vives como contexto cultural colombiano sin inferir de ahí el destino; confirma San Juan como capital de Puerto Rico, territorio de Estados Unidos con español oficial; y descarta La Habana y Santo Domingo por ser capitales de Estados soberanos."
+    "reasonPrompt": "Explica cómo la ficha editorial del libro, la fuente institucional de Piedad Bonnett y la discografía oficial de Carlos Vives conectan las tres actividades con Colombia. Distingue esa procedencia de las pruebas geográficas que permiten deducir el destino y descarta las otras dos opciones.",
+    "rubric": "La explicación relaciona Cien años de soledad/Gabriel García Márquez, Piedad Bonnett y La Tierra del Olvido/Carlos Vives con fuentes identificables que sitúan el contexto cultural en Colombia, sin atribuirles el destino. Luego parte de la nota de las 06:20, confirma San Juan como capital de Puerto Rico, territorio de Estados Unidos con español oficial, y descarta La Habana y Santo Domingo porque son capitales de Estados soberanos."
   },
   "closing": "La carpeta permite proponer el destino indicado. No confirma qué hará Kaline allí ni por qué viaja. Esa parte sigue abierta."
 }
