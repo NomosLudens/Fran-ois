@@ -51,7 +51,7 @@ Cada país ou território hispanófono visitado será um destino de investigaç�
 
 O jogador combina as quatro pistas para deduzir o próximo destino. As soluções terão critérios verificáveis; a IA poderá explicar e orientar, mas não decidir nem inventar o gabarito. Investigações devem poder ser interrompidas e retomadas sem perda de evidências, usando o SQLite, as sessões, o histórico, os catálogos, a revisão e o player já existentes. Não se prevê um motor de jogo separado sem necessidade demonstrada.
 
-Cinco componentes de experiência são **propostos**, ainda não implementados como jogo: **El Mapa** (destinos), **El Expediente** (caso e objetivos), **Las Pistas** (fontes e enigmas), **El Cuaderno** (vocabulário, notas e evidências) e **Kaline** (mensagens, gravações e conversa).
+No CASE 001 foram implementados o cartão de entrada, expediente Bogotá, três pistas consultáveis, enigma determinístico, cuaderno com notas/vocabulário/progresso de leitura e indicador do destino deduzido. Não há mapa interativo nem chat funcional neste caso; Kaline informa indisponibilidade quando o provedor não está configurado.
 
 ### Núcleo editorial aprovado
 
@@ -59,7 +59,7 @@ O romance de longo prazo será *Cien años de soledad*, de Gabriel García Márq
 
 O percurso de pensamento existencial prioriza Miguel de Unamuno e Emilio Uranga; José Ortega y Gasset será contextualizado pelo raciovitalismo; Carlos Astrada também integra a seleção filosófica. O núcleo de poesia inclui Sor Juana Inés de la Cruz, Delmira Agustini, Alfonsina Storni, Gabriela Mistral, Idea Vilariño, Piedad Bonnett, Sara Uribe, Elena Medel, Jorge Manrique, Gustavo Adolfo Bécquer, Rubén Darío, Antonio Machado, Federico García Lorca, César Vallejo, Raúl Zurita e Luis García Montero. O núcleo musical inclui Bad Bunny, Rosalía, Natalia Lafourcade, Jorge Drexler, Shakira e Mercedes Sosa. Esta seleção é uma direção editorial, não um catálogo bibliográfico já validado; equilíbrio regional, histórico e de gênero, obras específicas, proveniência e direitos ainda precisam de revisão.
 
-### Roteiro proposto — não implementado
+### Roteiro narrativo e estado dos casos
 
 | Caso proposto | Destino | Texto | Voz | Música | Enigma |
 |---|---|---|---|---|---|
@@ -67,14 +67,14 @@ O percurso de pensamento existencial prioriza Miguel de Unamuno e Emilio Uranga;
 | 002 | San Juan, Puerto Rico | Crônica porto-riquenha a selecionar | Julia de Burgos | Bad Bunny | Comparar depoimentos, inferências e contradições |
 | 003 | Ciudad de México, México | Emilio Uranga | Sor Juana Inés de la Cruz | Natalia Lafourcade | Comparar proposições e testemunhos |
 
-São propostas de roteiro, não casos prontos. A aprovação de cada caso depende de obras específicas, verificação bibliográfica, direitos, roteiro, solução lógica demonstrável e aprovação narrativa do proprietário.
+O caso 001 foi implementado e validado localmente conforme a seção de entrega abaixo. Casos 002 e 003 continuam propostas; obras, direitos, roteiro, solução e aprovação permanecem pendentes.
 
 ### Estado técnico vigente nesta decisão
 
 | Área | Estado | Evidência e limite |
 |---|---|---|
 | Histórico de missões | GENESIS_01 `PARTIAL`; UX_02 `PARTIAL`; MEDIA_FLOW_03 `PASS`; KALINE_04 `BLOCKED`; KALINE_05 `PARTIAL`; LANGUAGE_TRANSPLANT_06 `PARTIAL` | Estados preservados como registrados; não significam que a nova experiência de jogo já exista. |
-| Aplicativo e interface | Aplicativo de aprendizagem existente abre localmente; jogo investigativo ainda não implementado | A direção aprovada ainda não alterou a experiência para mapa, casos ou pistas. |
+| Aplicativo e interface | App abre localmente; CASE 001 está implementado no fluxo espanhol | Validação manual em navegador e SQLite isolado registrada abaixo; não houve deploy. |
 | Francês | Catálogo 40/40/40 preservado; quatro sessões anteriores permanecem francesas | O catálogo passou pelo validador; auditoria bibliográfica item a item segue pendente. |
 | Espanhol | Catálogo piloto de quatro itens; `ESL001` abriu e mostrou correção determinística; fluxo parcial | Persistência de conclusão, vocabulário selecionado e isolamento por idioma ainda não passaram por um percurso completo. |
 | SQLite | Integridade `ok`; quatro sessões francesas preservadas; nenhuma sessão espanhola de teste | O banco real e arquivos WAL/SHM são dados locais do proprietário e não serão publicados. |
@@ -88,8 +88,30 @@ São propostas de roteiro, não casos prontos. A aprovação de cada caso depend
 - Validar que cada pista sustenta a dedução e que o gabarito lógico não depende de resposta improvisada do modelo.
 - Concluir e persistir uma sessão espanhola real, validar seleção/salvamento de vocabulário, confirmar o gabarito gramatical e testar retomada após reload sem fabricar progresso.
 - Validar navegação móvel em 390×844; testar chat, voz e transcrição somente após configuração legítima dos serviços.
-- Implementar e testar a investigação apenas na próxima missão, preservando histórico, progresso e interface existente até essa autorização específica.
+- Planejar o caso 002 apenas após revisão editorial; manter motivo da viagem e eventuais perseguidores sem cânone aprovado.
 
 ### Próxima missão exata
 
-`MISSION=LA_KALINE_CASE_001_GENESIS` — definir roteiro original para Bogotá; selecionar fontes reais e autorizadas para os quatro elementos; implementar um caso investigativo orientado por dados no aplicativo existente; persistir e retomar evidências no SQLite; validar o enigma com solução verificável; testar manualmente no navegador; preservar o percurso francês e o progresso existente. Nenhuma parte do jogo foi iniciada nesta missão.
+`MISSION=LA_KALINE_CASE_001_GENESIS` — concluída localmente; ver seção “Entrega CASE 001”. Próxima ação: revisar integração pública segura sobre `origin/master`, sem incluir histórico/arquivos locais privados.
+
+
+### Entrega CASE 001 — 2026-10-27
+
+| Gate | Estado | Evidência / limite |
+|---|---|---|
+| Caso jogável | PASS local | `content/case001.json` fornece a nota ficcional, três fontes, três cidades candidatas e o enigma. O motivo da viagem continua explicitamente desconhecido. |
+| Texto e leitura | PASS local | Nota original identificada como ficção; edição de *Cien años de soledad* tem link editorial. O livro não é reproduzido nem presumido lido. |
+| Voz / poesia | PASS local | Link para recital institucional de Piedad Bonnett. Link testado no player do YouTube; não se copiam versos. |
+| Música | PASS local | Vídeo oficial de Carlos Vives testado com reprodução e avanço do contador, sem pedido de login no cenário observado. Não se copiam letras. |
+| Dedução | PASS local | Resposta errada e justificativa insuficiente rejeitadas; justificativa completa aceitou San Juan, Puerto Rico, como próximo destino proposto. Enigma exige as três pistas anteriores e registra tentativas no SQLite. |
+| Persistência | PASS em cópias isoladas | Notas, leitura, tentativas, estado do caso e vocabulário usam tabelas SQLite aditivas; recarga recuperou o estado. Não se criaram sessões francesas artificiais. |
+| Responsividade | PASS local | Navegador verificado em desktop 1440×900 e mobile 390×844. |
+| Percurso anterior | PRESERVADO | Cópia de teste e SQLite proprietário mantêm SARTRE-01, P001, M001 e G001. Hashes do SQLite, WAL e SHM do proprietário correspondem ao checkpoint. |
+| Chat e voz | BLOCKED | Chat depende de `OPENROUTER_API_KEY`; TTS/STT não foram implementados nesta missão. O caso segue jogável sem esses serviços. |
+| Publicação | PENDENTE | `origin/master` não contém o histórico privado local. Publicar exige branch baseada em `origin/master` com apenas os arquivos aprovados desta missão. |
+
+Os testes com progresso ocorreram somente em bancos isolados criados do backup consistente em `/tmp/la-kaline-case-001-checkpoint/`. `PRAGMA integrity_check` retornou `ok` nas duas cópias e no banco do proprietário. O banco do proprietário não foi alterado.
+
+Arquivos desta missão: `app.js`, `server.mjs`, `styles.css`, `content/case001.json` e este mapa. Os quatro arquivos WIP não rastreados foram preservados e excluídos da alteração. Nenhum deploy foi realizado.
+
+`NEXT_EXACT_ACTION=criar commit isolado dos arquivos aprovados e preparar branch pública a partir de origin/master, sem carregar commits/arquivos privados locais; revisar PR antes de merge.`

@@ -11,6 +11,8 @@ await mkdir(resolve(dbPath, '..'), { recursive: true });
 const db = new DatabaseSync(dbPath);
 const catalog = JSON.parse(await readFile(resolve(root, 'content/catalog.json'), 'utf8'));
 const spanishCatalog = JSON.parse(await readFile(resolve(root, 'content/catalog.es.json'), 'utf8'));
+const case001 = JSON.parse(await readFile(resolve(root, 'content/case001.json'), 'utf8'));
+const case001NextDestination = 'San Juan, Puerto Rico';
 db.exec(`PRAGMA journal_mode = WAL;
 CREATE TABLE IF NOT EXISTS sessions (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -73,6 +75,51 @@ CREATE TABLE IF NOT EXISTS chat_messages (
   created_at TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS chat_messages_order ON chat_messages(conversation_id, id);`);
+db.exec(`CREATE TABLE IF NOT EXISTS case_progress (
+  case_id TEXT NOT NULL,
+  user_id TEXT NOT NULL DEFAULT 'local',
+  status TEXT NOT NULL DEFAULT 'in_progress' CHECK(status IN ('in_progress','solved')),
+  next_destination TEXT NOT NULL DEFAULT '',
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY(case_id,user_id)
+);
+CREATE TABLE IF NOT EXISTS case_clue_progress (
+  case_id TEXT NOT NULL,
+  user_id TEXT NOT NULL DEFAULT 'local',
+  clue_id TEXT NOT NULL,
+  status TEXT NOT NULL CHECK(status IN ('examined','resolved')),
+  response TEXT NOT NULL DEFAULT '',
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY(case_id,user_id,clue_id)
+);
+CREATE TABLE IF NOT EXISTS case_notes (
+  case_id TEXT NOT NULL,
+  user_id TEXT NOT NULL DEFAULT 'local',
+  note_key TEXT NOT NULL,
+  body TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY(case_id,user_id,note_key)
+);
+CREATE TABLE IF NOT EXISTS case_reading_progress (
+  case_id TEXT NOT NULL,
+  user_id TEXT NOT NULL DEFAULT 'local',
+  edition TEXT NOT NULL DEFAULT '',
+  section TEXT NOT NULL DEFAULT '',
+  observation TEXT NOT NULL DEFAULT '',
+  interpretation TEXT NOT NULL DEFAULT '',
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY(case_id,user_id)
+);
+CREATE TABLE IF NOT EXISTS case_attempts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  case_id TEXT NOT NULL,
+  user_id TEXT NOT NULL DEFAULT 'local',
+  answer TEXT NOT NULL,
+  rationale TEXT NOT NULL DEFAULT '',
+  correct INTEGER NOT NULL CHECK(correct IN (0,1)),
+  attempted_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS case_attempts_order ON case_attempts(case_id,user_id,id);`);
 for (const [table, column, definition] of [['chat_conversations','language',"TEXT NOT NULL DEFAULT 'fr' CHECK(language IN ('fr','es'))"],['session_activity','language',"TEXT NOT NULL DEFAULT 'fr' CHECK(language IN ('fr','es'))"]]) {
   const columns = new Set(db.prepare(`PRAGMA table_info(${table})`).all().map(value => value.name));
   if (!columns.has(column)) db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`);
@@ -83,6 +130,19 @@ const frenchItems = [...catalog.poems, ...catalog.songs, ...catalog.grammar];
 const spanishItems = spanishCatalog.items;
 const languageFor = id => String(id || '').startsWith('ES') ? 'es' : 'fr';
 const validItem = id => (languageFor(id) === 'es' ? spanishItems : frenchItems).find(item => item.id === id);
+const validVocabularyItem = (id, language) => (language === 'es' && id === 'CASE001') || (language === languageFor(id) && validItem(id));
+const normalizeCaseText = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es-419').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
+const caseAnswerCorrect = (answer, rationale) => {
+  const destination = ['san juan','san juan puerto rico'].includes(normalizeCaseText(answer));
+  const reason = normalizeCaseText(rationale);
+  const puertoRicoFacts = ['capital','puerto rico','territorio','estados unidos','espanol','oficial'].every(term => reason.includes(term));
+  const excludesHavana = /\b(la habana|cuba)\b/.test(reason);
+  const excludesSantoDomingo = /\b(santo domingo|republica dominicana)\b/.test(reason);
+  const explainsSovereignty = reason.includes('soberano') && /\b(no|nao|not)\b/.test(reason) && /descart|no cumple|no satisface/.test(reason);
+  const usesThreeClues = reason.includes('06 20') && reason.includes('piedad bonnett') && reason.includes('carlos vives');
+  const separatesContext = /contexto|no (indica|nombra|determina|demuestra|prueba)/.test(reason);
+  return destination && puertoRicoFacts && excludesHavana && excludesSantoDomingo && explainsSovereignty && usesThreeClues && separatesContext;
+};
 const validSessionId = id => Boolean(validItem(id) || (languageFor(id)==='fr' && /^SARTRE-\d{2}$/.test(id||'')));
 const itemType = id => {
   if (languageFor(id) === 'es') return validItem(id)?.type || null;
@@ -158,7 +218,7 @@ const server = createServer(async (req,res) => {
     return send(res,200,{words:db.prepare('SELECT id,item_id AS itemId,word,title,context,saved_at AS savedAt FROM vocabulary_items WHERE user_id=? AND language=? ORDER BY saved_at DESC,id DESC').all(localUserId,language)});
   }
   if (url.pathname === '/api/vocabulary' && req.method === 'POST') {
-    try { const b=await bodyJson(req); if(!['es','fr'].includes(b.language)||!validItem(b.itemId)||languageFor(b.itemId)!==b.language||typeof b.word!=='string'||!b.word.trim()||b.word.length>120)return send(res,400,{error:'Palavra de vocabulário inválida.'}); const now=new Date().toISOString(); db.prepare('INSERT INTO vocabulary_items(user_id,language,item_id,word,title,context,saved_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(user_id,language,item_id,word) DO UPDATE SET title=excluded.title,context=excluded.context').run(localUserId,b.language,b.itemId,b.word.trim(),String(b.title||'').slice(0,200),String(b.context||'').slice(0,500),now); return send(res,201,{saved:true}); }
+    try { const b=await bodyJson(req); if(!['es','fr'].includes(b.language)||!validVocabularyItem(b.itemId,b.language)||typeof b.word!=='string'||!b.word.trim()||b.word.length>120)return send(res,400,{error:'Palavra de vocabulário inválida.'}); const now=new Date().toISOString(); db.prepare('INSERT INTO vocabulary_items(user_id,language,item_id,word,title,context,saved_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(user_id,language,item_id,word) DO UPDATE SET title=excluded.title,context=excluded.context').run(localUserId,b.language,b.itemId,b.word.trim(),String(b.title||'').slice(0,200),String(b.context||'').slice(0,500),now); return send(res,201,{saved:true}); }
     catch { return send(res,400,{error:'Não foi possível guardar a palavra.'}); }
   }
   if (url.pathname === '/api/vocabulary' && req.method === 'DELETE') {
@@ -193,6 +253,54 @@ const server = createServer(async (req,res) => {
       db.prepare(`INSERT INTO session_activity (session_key,user_id,item_id,language,answer,exercise_answer,correction,updated_at) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(session_key,user_id) DO UPDATE SET item_id=excluded.item_id,language=excluded.language,answer=excluded.answer,exercise_answer=excluded.exercise_answer,correction=excluded.correction,updated_at=excluded.updated_at`).run(key,localUserId,b.itemId,languageFor(b.itemId),answer,exerciseAnswer,correction,now);
       return send(res,200,{saved:true});
     }catch{return send(res,400,{error:'Não foi possível salvar o contexto pedagógico da sessão.'});}
+  }
+  if(url.pathname==='/api/case/001'&&req.method==='GET'){
+    const progress=db.prepare('SELECT status,next_destination AS nextDestination,updated_at AS updatedAt FROM case_progress WHERE case_id=? AND user_id=?').get(case001.id,localUserId);
+    const clues=db.prepare('SELECT clue_id AS clueId,status,response,updated_at AS updatedAt FROM case_clue_progress WHERE case_id=? AND user_id=? ORDER BY clue_id').all(case001.id,localUserId);
+    const notes=db.prepare('SELECT note_key AS noteKey,body,updated_at AS updatedAt FROM case_notes WHERE case_id=? AND user_id=?').all(case001.id,localUserId);
+    const reading=db.prepare('SELECT edition,section,observation,interpretation,updated_at AS updatedAt FROM case_reading_progress WHERE case_id=? AND user_id=?').get(case001.id,localUserId)||null;
+    const attempts=db.prepare('SELECT answer,rationale,correct,attempted_at AS attemptedAt FROM case_attempts WHERE case_id=? AND user_id=? ORDER BY id').all(case001.id,localUserId);
+    return send(res,200,{case:case001,progress:progress||{status:'not_started',nextDestination:'',updatedAt:null},clues,notes,reading,attempts,chatConfigured:Boolean(process.env.OPENROUTER_API_KEY)});
+  }
+  if(url.pathname==='/api/case/001/start'&&req.method==='POST'){
+    const now=new Date().toISOString();
+    db.prepare("INSERT INTO case_progress(case_id,user_id,status,next_destination,updated_at) VALUES(?,?,'in_progress','',?) ON CONFLICT(case_id,user_id) DO UPDATE SET updated_at=excluded.updated_at").run(case001.id,localUserId,now);
+    return send(res,200,{started:true});
+  }
+  if(url.pathname==='/api/case/001/clue'&&req.method==='POST'){
+    try{
+      const b=await bodyJson(req);const clue=case001.clues.find(item=>item.id===b.clueId);
+      if(!clue||!['examined','resolved'].includes(b.status))return send(res,400,{error:'Pista inválida.'});
+      const response=typeof b.response==='string'?b.response.trim().slice(0,2400):'';
+      if(b.status==='resolved'&&response.length<8)return send(res,400,{error:'Registre uma observação breve, baseada no material que consultou.'});
+      const now=new Date().toISOString();
+      db.prepare(`INSERT INTO case_clue_progress(case_id,user_id,clue_id,status,response,updated_at) VALUES(?,?,?,?,?,?)
+        ON CONFLICT(case_id,user_id,clue_id) DO UPDATE SET status=CASE WHEN case_clue_progress.status='resolved' THEN 'resolved' ELSE excluded.status END,response=CASE WHEN excluded.response='' THEN case_clue_progress.response ELSE excluded.response END,updated_at=excluded.updated_at`).run(case001.id,localUserId,clue.id,b.status,response,now);
+      db.prepare("INSERT INTO case_progress(case_id,user_id,status,next_destination,updated_at) VALUES(?,?,'in_progress','',?) ON CONFLICT(case_id,user_id) DO UPDATE SET updated_at=excluded.updated_at").run(case001.id,localUserId,now);
+      return send(res,200,{saved:true});
+    }catch{return send(res,400,{error:'Não foi possível salvar o estado da pista.'});}
+  }
+  if(url.pathname==='/api/case/001/note'&&req.method==='POST'){
+    try{const b=await bodyJson(req);if(b.noteKey!=='cuaderno'||typeof b.body!=='string'||b.body.length>4000)return send(res,400,{error:'Nota inválida.'});const now=new Date().toISOString();db.prepare('INSERT INTO case_notes(case_id,user_id,note_key,body,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(case_id,user_id,note_key) DO UPDATE SET body=excluded.body,updated_at=excluded.updated_at').run(case001.id,localUserId,b.noteKey,b.body.trim(),now);return send(res,200,{saved:true});}
+    catch{return send(res,400,{error:'Não foi possível guardar a nota no SQLite.'});}
+  }
+  if(url.pathname==='/api/case/001/reading'&&req.method==='POST'){
+    try{const b=await bodyJson(req);const fields=['edition','section','observation','interpretation'];if(fields.some(key=>typeof b[key]!=='string'||b[key].length>1200))return send(res,400,{error:'Registro de leitura inválido.'});const now=new Date().toISOString();db.prepare(`INSERT INTO case_reading_progress(case_id,user_id,edition,section,observation,interpretation,updated_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(case_id,user_id) DO UPDATE SET edition=excluded.edition,section=excluded.section,observation=excluded.observation,interpretation=excluded.interpretation,updated_at=excluded.updated_at`).run(case001.id,localUserId,...fields.map(key=>b[key].trim()),now);return send(res,200,{saved:true});}
+    catch{return send(res,400,{error:'Não foi possível guardar o registro de leitura.'});}
+  }
+  if(url.pathname==='/api/case/001/answer'&&req.method==='POST'){
+    try{
+      const b=await bodyJson(req);if(typeof b.answer!=='string'||b.answer.length>120||typeof b.rationale!=='string'||b.rationale.length>1600)return send(res,400,{error:'Resposta do enigma inválida.'});
+      const resolved=new Set(db.prepare("SELECT clue_id FROM case_clue_progress WHERE case_id=? AND user_id=? AND status='resolved'").all(case001.id,localUserId).map(row=>row.clue_id));
+      const missing=case001.clues.filter(clue=>!resolved.has(clue.id)).map(clue=>clue.id);
+      if(missing.length)return send(res,409,{error:'Antes do enigma, conclua as três pistas anteriores com uma observação própria.',missing});
+      const answer=b.answer.trim();const rationale=b.rationale.trim();const correct=caseAnswerCorrect(answer,rationale);const now=new Date().toISOString();
+      db.prepare('INSERT INTO case_attempts(case_id,user_id,answer,rationale,correct,attempted_at) VALUES(?,?,?,?,?,?)').run(case001.id,localUserId,answer,rationale,correct?1:0,now);
+      if(!correct)return send(res,200,{correct:false,message:normalizeCaseText(answer)==='san juan'||normalizeCaseText(answer)==='san juan puerto rico'?'La ciudad coincide, pero falta justificar el orden de la nota de las 06:20, qué aportan las fuentes de Piedad Bonnett y Carlos Vives, y los datos territoriales que descartan las otras capitales.':'Esa hipótesis no satisface todas las condiciones de la nota. Relee las tres fuentes y vuelve a intentarlo.'});
+      db.prepare("INSERT INTO case_clue_progress(case_id,user_id,clue_id,status,response,updated_at) VALUES(?,?,'enigma','resolved',?,?) ON CONFLICT(case_id,user_id,clue_id) DO UPDATE SET status='resolved',response=excluded.response,updated_at=excluded.updated_at").run(case001.id,localUserId,`${answer}\n${rationale}`,now);
+      db.prepare("INSERT INTO case_progress(case_id,user_id,status,next_destination,updated_at) VALUES(?,?,'solved',?,?) ON CONFLICT(case_id,user_id) DO UPDATE SET status='solved',next_destination=excluded.next_destination,updated_at=excluded.updated_at").run(case001.id,localUserId,case001NextDestination,now);
+      return send(res,200,{correct:true,solved:true,nextDestination:case001NextDestination,closing:case001.closing.replace('el destino indicado',case001NextDestination)});
+    }catch{return send(res,400,{error:'Não foi possível verificar a resposta.'});}
   }
   if(url.pathname==='/api/chat'&&req.method==='POST'){
     if(!process.env.OPENROUTER_API_KEY)return send(res,503,{error:'Conversa indisponível: OPENROUTER_API_KEY não configurada no servidor.'});
