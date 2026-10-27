@@ -108,10 +108,10 @@ O caso 001 foi implementado e validado localmente conforme a seção de entrega 
 | Responsividade | PASS local | Navegador verificado em desktop 1440×900 e mobile 390×844. |
 | Percurso anterior | PRESERVADO | Cópia de teste e SQLite proprietário mantêm SARTRE-01, P001, M001 e G001. O banco principal e o WAL correspondem ao checkpoint; o SHM transitório tem hash diferente e não foi restaurado nem substituído. |
 | Chat e voz | BLOCKED | Chat depende de `OPENROUTER_API_KEY`; TTS/STT não foram implementados nesta missão. O caso segue jogável sem esses serviços. |
-| Publicação | PENDENTE | `origin/master` não contém o histórico privado local. Publicar exige branch baseada em `origin/master` com apenas os arquivos aprovados desta missão. |
+| Publicação | ISOLADA | A integração foi preparada em branch baseada em `origin/master`, com somente os cinco arquivos aprovados. O histórico local privado e os quatro WIP não entram na branch. Nenhum deploy. |
 
 Os testes com progresso ocorreram somente em bancos isolados criados do backup consistente em `/tmp/la-kaline-case-001-checkpoint/`. `PRAGMA integrity_check` retornou `ok` nas duas cópias e no banco do proprietário. O banco principal e o WAL do proprietário mantêm o hash do checkpoint; o hash do SHM transitório divergiu na verificação final. O banco principal e os quatro registros de sessão permaneceram intactos.
 
 Arquivos desta missão: `app.js`, `server.mjs`, `styles.css`, `content/case001.json` e este mapa. Os quatro arquivos WIP não rastreados foram preservados e excluídos da alteração. Nenhum deploy foi realizado.
 
-`NEXT_EXACT_ACTION=criar commit isolado dos arquivos aprovados e preparar branch pública a partir de origin/master, sem carregar commits/arquivos privados locais; revisar PR antes de merge.`
+`NEXT_EXACT_ACTION=planejar CASE 002 após revisão editorial; preservar o mistério central em aberto e manter chat/voz como bloqueios separados até configuração e validação reais.`
