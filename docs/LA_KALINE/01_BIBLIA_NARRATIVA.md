@@ -5,7 +5,7 @@
 
 ## Premissa e contrato com o jogador
 
-Em Bogotá, o jogador recebe um envelope sem remetente com uma fotografia, uma referência a 06:20, um mapa incompleto, uma mensagem em espanhol e a assinatura de Kaline. Seguindo documentos e correspondências por cidades do mundo hispanófono, passa a chamar o conjunto ficcional de **El Atlas de las Ausencias**. O atlas é uma criação do jogo, nunca um arquivo histórico real. A pergunta central é quem organizou e alterou a cadeia documental, por que os registros divergem e o que Kaline sabe. O ano não decide motivo definitivo de uma fuga, perseguidor, autoria das alterações nem intenção final de Kaline.
+En Bogotá, el jugador encuentra una carpeta bajo una mesa y una nota en español fechada a las 06:20, sin atribuirle autoría a Kaline. CASE001 no contiene fotografía ni mapa como pistas; no agregarlos como evidencia retrospectiva. Seguindo documentos e correspondências por cidades do mundo hispanófono, passa a chamar o conjunto ficcional de **El Atlas de las Ausencias**. O atlas é uma criação do jogo, nunca um arquivo histórico real. A pergunta central é quem organizou e alterou a cadeia documental, por que os registros divergem e o que Kaline sabe. O ano não decide motivo definitivo de uma fuga, perseguidor, autoria das alterações nem intenção final de Kaline.
 
 Kaline tem agência e contradições; não aparece fisicamente no primeiro ano nem existe apenas para entregar tarefas. O jogador investiga, escolhe interpretações e pode manter hipótese em aberto. A narração privilegia segunda pessoa em espanhol, com apoio em português ajustado à proficiência observada. Não impõe nome, profissão ou biografia ao jogador. Personagens secundários identificados na matriz são ficcionais e ainda precisam de revisão de voz, continuidade e representação.
 
@@ -32,14 +32,14 @@ O jogador é observador e autor de hipóteses, não agente com biografia predete
 
 ### Objetos e memória narrativa
 
-A referência 06:20, a dobra triangular, os mapas incompletos, variantes de cópias, números de caixa e páginas ausentes reaparecem com origem rastreável. O caderno distingue `FATO_CONFIRMADO`, `TESTEMUNHO`, `HIPÓTESE`, `CONTESTADO` e `DEDUÇÃO_DO_JOGADOR`, sempre ligando item a documento, data e proveniência. Uma revisão posterior acrescenta estado e evidência; não altera retroativamente o que o jogador viu.
+A referência 06:20, variantes de cópias, números de caixa e páginas ausentes são motivos planejados para documentos futuros, sempre com origem rastreável; nenhum deles deve ser tratado como pista já presente em CASE001 sem confirmação no conteúdo real. O caderno distingue `FATO_CONFIRMADO`, `TESTEMUNHO`, `HIPÓTESE`, `CONTESTADO` e `DEDUÇÃO_DO_JOGADOR`, sempre ligando item a documento, data e proveniência. Uma revisão posterior acrescenta estado e evidência; não altera retroativamente o que o jogador viu.
 
 ## Cinco atos, 35 expedições e epílogo
 
-Cada ato contém sete expedições de dez dias. O ritmo de cada cidade muda conforme o conflito; a matriz apresenta movimentos individualizados e não fixa ainda texto final, elenco aprovado nem gabaritos implementáveis. Os 35 fechamentos são casos planejados, não enigmas validados.
+Cada ato contém sete expedições de dez dias. O ritmo de cada cidade muda conforme o conflito; a matriz apresenta movimentos individualizados e não fixa ainda texto final, elenco aprovado nem gabaritos implementáveis. CASE001 é um caso funcional separado, cujo gabarito atual não se modifica aquí; las otras 34 expediciones permanecen como casos planeados, no enigmas validados.
 
-- **Expediente 001, dias 001–010, Bogotá, Colômbia — *La carta de las seis y veinte*.** O envelope sem remetente reúne fotografia, mapa incompleto e mensagem assinada; o registro 06:20 parece horário, mas ainda não há base para definir o que mede.
-- **Expediente 002, dias 011–020, Medellín, Colômbia — *La segunda firma*.** Uma segunda assinatura no verso desloca a autoria da primeira carta para uma cadeia de custódia ainda incompleta.
+- **Expediente 001, dias 001–010, Bogotá, Colômbia — *La carta de las seis y veinte*.** La carpeta aparece bajo una mesa; la nota presenta una condición de destino y la marca temporal 06:20. No explica motivo ni autoría.
+- **Expediente 002, días 011–020, San Juan, Puerto Rico — *La canción y el mensaje*.** Propuesta de reordenación para respetar el destino físico aceptado en el caso 001. El expediente aún necesita una escena de llegada y contenido nuevo; no está implementado.
 - **Expediente 003, dias 021–030, Cusco, Peru — *La ruta de las alturas*.** Um croqui de transporte mistura ponto de partida e destino; a equipe precisa distinguir cidade, região e referência patrimonial sem converter o sítio real em cenário de conspiração.
 - **Expediente 004, dias 031–040, Asunción, Paraguai — *Dos lenguas, una pista*.** Duas versões de uma anotação não coincidem; o expediente exige registrar língua, tradução e autoria, sem tratar o guarani como código exótico.
 - **Expediente 005, dias 041–050, Montevideo, Uruguai — *Las palabras ausentes*.** Uma carta tem lacunas em posições regulares; o grupo precisa separar ausência material de sentido presumido.
@@ -56,7 +56,7 @@ Cada ato contém sete expedições de dez dias. O ritmo de cada cidade muda conf
 - **Expediente 016, dias 151–160, Cartagena, Colômbia — *La dirección equivocada*.** Uma direção leva a um endereço real, mas o número não corresponde à sequência do próprio documento.
 - **Expediente 017, dias 161–170, Caracas, Venezuela — *La voz en la radio*.** Uma gravação ficcional de arquivo tem começo e fim preservados, mas o trecho central está ausente; a equipe evita reconstruir palavras não ouvidas.
 - **Expediente 018, dias 171–180, Santo Domingo, República Dominicana — *La habitación cerrada*.** Um inventário de quarto lista objeto que não aparece na fotografia posterior; data e ângulo podem explicar a diferença.
-- **Expediente 019, dias 181–190, San Juan, Puerto Rico — *La canción y el mensaje*.** Uma atividade de escuta autorizada e uma nota ficcional compartilham uma sequência temporal; a música real será selecionada e validada separadamente, sem reproduzir letra protegida.
+- **Expediente 019, días 181–190, Medellín, Colombia — *La segunda firma*.** Propuesta de permuta con EXP002; requiere rehacer la continuidad de esas fichas y no implica que la conexión archivística esté escrita o validada.
 - **Expediente 020, dias 191–200, La Habana, Cuba — *La cinta*.** Uma fita catalogada tem dois números de caixa e um único registro de empréstimo; o suporte não revela sozinho quem a consultou.
 - **Expediente 021, dias 201–210, Santiago de Cuba, Cuba — *El sonido que falta*.** Uma ficha de conservação marca um intervalo de silêncio; a equipe aprende que silêncio preservado não equivale a fala omitida.
 - **Expediente 022, dias 211–220, Quito, Equador — *El punto de observación*.** Um desenho muda conforme o ponto de observação; as coordenadas precisam de sistema e escala explícitos.

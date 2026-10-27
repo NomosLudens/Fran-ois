@@ -1,80 +1,100 @@
 {
   "schema_version": "1.0-proposal",
   "count": 35,
-  "warning": "Estes 35 registros descrevem o formato e a pergunta investigativa. Premissas são ficcionais propostas; soluções e gabaritos continuam nulos. Não usar como cases executáveis.",
+  "warning": "CASE001 resume como referencia el caso determinístico ya presente en content/case001.json; esta edición documental no altera ese archivo. Los otros 34 contratos son propuestas no ejecutables, pendientes de premisas y gabaritos revisados. Para respetar CASE001, la propuesta editorial asigna San Juan a EXP002 y Medellín a EXP019; fuentes y transiciones siguen pendientes.",
   "cases": [
     {
       "case_id": "CASO_001",
       "expedition_id": "EXP001",
       "city": "Bogotá",
-      "problem_statement": "Caso 001: El sobre sin remitente lleva una fotografía, un mapa incompleto y la hora 06:20; aún no sabemos qué mide. Formular una conclusión limitada compatible con los registros disponibles en Bogotá, sin rellenar lagunas ni presumir autoría.",
-      "premises_status": "PROPOSED_FICTIONAL_PREMISES",
+      "problem_statement": "Caso 001 (referencia al caso implementado): la nota a las 06:20 exige una capital insular del Caribe, con español oficial, en territorio no soberano. Distinguir la condición textual de las fichas de contexto de Piedad Bonnett y Carlos Vives, y contrastar San Juan, La Habana y Santo Domingo con las fuentes incluidas en CASE001.",
+      "premises_status": "CURRENT_CASE_REFERENCE; no es una nueva premisa editorial",
       "premises": [
         {
+          "evidence_id": "EVID-001-01",
+          "claim": "La nota en CASE001 contiene la condición de destino y deja sin explicar por qué viaja alguien y qué mide 06:20.",
+          "source_type": "contenido vigente: content/case001.json, clue texto"
+        },
+        {
           "evidence_id": "EVID-001-02",
-          "claim": "La fuente inicial registra el sobre y su dato observable; no demuestra por sí sola autoría ni intención.",
-          "source_type": "documento ficcional original planejado"
+          "claim": "El recital de Piedad Bonnett es contexto poético colombiano; no nombra el destino.",
+          "source_type": "contenido vigente: content/case001.json, clue voz"
         },
         {
-          "evidence_id": "EVID-001-07",
-          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: El sobre sin remitente lleva una fotografía, un mapa incompleto y la hora 06:20; aún no sabemos qué mide.",
-          "source_type": "documento ficcional original planejado"
+          "evidence_id": "EVID-001-03",
+          "claim": "La canción oficial de Carlos Vives sitúa contexto cultural colombiano; no nombra el destino.",
+          "source_type": "contenido vigente: content/case001.json, clue cancion"
         },
         {
-          "evidence_id": "EVID-001-09",
-          "claim": "La cadena de custodia propuesta conserva procedencia, orden y límites conocidos.",
-          "source_type": "documento ficcional original planejado"
+          "evidence_id": "EVID-001-04",
+          "claim": "Las fuentes incluidas en CASE001 identifican San Juan como capital de Puerto Rico y describen la jurisdicción/idiomas que satisfacen la condición textual.",
+          "source_type": "fuentes comparativas incluidas en content/case001.json"
+        },
+        {
+          "evidence_id": "EVID-001-05",
+          "claim": "La Habana es capital de Cuba, Estado soberano; por eso contradice la condición de territorio no soberano.",
+          "source_type": "fuente comparativa incluida en content/case001.json"
+        },
+        {
+          "evidence_id": "EVID-001-06",
+          "claim": "Santo Domingo es capital de República Dominicana, Estado soberano; por eso contradice la condición de territorio no soberano.",
+          "source_type": "fuente comparativa incluida en content/case001.json"
         }
       ],
       "source_ids": [
         "EVID-001-01",
         "EVID-001-02",
-        "EVID-001-07",
-        "EVID-001-09"
+        "EVID-001-03",
+        "EVID-001-04",
+        "EVID-001-05",
+        "EVID-001-06"
       ],
       "hypotheses": [
         {
           "hypothesis_id": "H1",
-          "statement": "H1: explicación mínima compatible con el sobre y con las dos fuentes disponibles, sin atribuir identidad no probada.",
-          "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
+          "statement": "San Juan, Puerto Rico satisface la condición de la nota al contrastarla con las fuentes de CASE001.",
+          "acceptance": "ACCEPTED_BY_CURRENT_CASE_GABARITO"
         },
         {
           "hypothesis_id": "H2",
-          "statement": "H2: explicación que llena el dato ausente o atribuye intención/autoria sin corroboración independiente.",
-          "acceptance": "NO_ACEPTAR_SIN_PREMISAS"
+          "statement": "La Habana o Santo Domingo como destino no satisfacen la condición de territorio no soberano.",
+          "acceptance": "REJECTED_BY_CURRENT_CASE_GABARITO"
         }
       ],
-      "solution": null,
-      "demonstration": null,
-      "accepted_answers": [],
-      "expected_errors": [
-        "confundir semejanza con identidad",
-        "tratar testimonio como hecho confirmado",
-        "rellenar datos ausentes",
-        "ignorar procedencia o cronología"
+      "solution": "San Juan, Puerto Rico",
+      "demonstration": "La nota exige capital insular caribeña, español oficial y territorio no soberano. Las fuentes comparativas actuales de CASE001 confirman la capitalidad de San Juan y la condición jurisdiccional de Puerto Rico; las otras opciones son capitales de Estados soberanos. Las fichas de Piedad Bonnett y Carlos Vives son contexto, no premisas geográficas.",
+      "accepted_answers": [
+        "San Juan",
+        "San Juan, Puerto Rico"
       ],
-      "feedback_policy": "Explicar qué premisa apoya o contradice la respuesta; permitir revisión; gabarito determinístico pendente de definição, revisão e implementação.",
-      "consequence_proposal": "Cerrar el expediente local y formular una pregunta comprobable para «La segunda firma».",
-      "source_status": "PLANNED",
-      "editorial_status": "PROPOSAL",
-      "implementation_status": "NOT_STARTED",
-      "manual_acceptance": "NOT_RUN"
+      "expected_errors": [
+        "inferir el destino de la canción o el poema",
+        "responder La Habana o Santo Domingo sin atender soberanía",
+        "atribuir motivo o autoría",
+        "afirmar qué mide 06:20"
+      ],
+      "feedback_policy": "Seguir la rúbrica determinística existente en content/case001.json. No alterar la solución con IA.",
+      "consequence_proposal": "La pregunta del caso indica San Juan. La propuesta editorial A lo ubica como siguiente destino físico; una escena de viaje y llegada queda por escribir/aprobar.",
+      "source_status": "SOURCES_LINKED_IN_CURRENT_CASE; no acceso externo revalidado en esta misión",
+      "editorial_status": "REFERENCE_TO_IMPLEMENTED_CASE; no modificar CASE001",
+      "implementation_status": "IMPLEMENTED_IN_CONTENT_CASE001_JSON",
+      "manual_acceptance": "REPORTED_PREVIOUSLY; not retested in this mission"
     },
     {
       "case_id": "CASO_002",
       "expedition_id": "EXP002",
-      "city": "Medellín",
-      "problem_statement": "Caso 002: La firma del reverso cambia la cadena de custodia de la primera carta, pero no identifica a quien la puso. Formular una conclusión limitada compatible con los registros disponibles en Medellín, sin rellenar lagunas ni presumir autoría.",
+      "city": "San Juan",
+      "problem_statement": "Caso 002: Una ficha de escucha vincula un registro horario con una grabación que aún requiere selección, acceso y prueba reales. Formular una conclusión limitada compatible con los registros disponibles en San Juan, sin rellenar lagunas ni presumir autoría.",
       "premises_status": "PROPOSED_FICTIONAL_PREMISES",
       "premises": [
         {
           "evidence_id": "EVID-002-02",
-          "claim": "La fuente inicial registra la firma y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "claim": "La fuente inicial registra la ficha de escucha y su dato observable; no demuestra por sí sola autoría ni intención.",
           "source_type": "documento ficcional original planejado"
         },
         {
           "evidence_id": "EVID-002-07",
-          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: La firma del reverso cambia la cadena de custodia de la primera carta, pero no identifica a quien la puso.",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una ficha de escucha vincula un registro horario con una grabación que aún requiere selección, acceso y prueba reales.",
           "source_type": "documento ficcional original planejado"
         },
         {
@@ -92,7 +112,7 @@
       "hypotheses": [
         {
           "hypothesis_id": "H1",
-          "statement": "H1: explicación mínima compatible con la firma y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "statement": "H1: explicación mínima compatible con la ficha de escucha y con las dos fuentes disponibles, sin atribuir identidad no probada.",
           "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
         },
         {
@@ -1032,18 +1052,18 @@
     {
       "case_id": "CASO_019",
       "expedition_id": "EXP019",
-      "city": "San Juan",
-      "problem_statement": "Caso 019: Una ficha de escucha vincula un registro horario con una grabación que aún requiere selección, acceso y prueba reales. Formular una conclusión limitada compatible con los registros disponibles en San Juan, sin rellenar lagunas ni presumir autoría.",
+      "city": "Medellín",
+      "problem_statement": "Caso 019: La firma del reverso cambia la cadena de custodia de la primera carta, pero no identifica a quien la puso. Formular una conclusión limitada compatible con los registros disponibles en Medellín, sin rellenar lagunas ni presumir autoría.",
       "premises_status": "PROPOSED_FICTIONAL_PREMISES",
       "premises": [
         {
           "evidence_id": "EVID-019-02",
-          "claim": "La fuente inicial registra la ficha de escucha y su dato observable; no demuestra por sí sola autoría ni intención.",
+          "claim": "La fuente inicial registra la firma y su dato observable; no demuestra por sí sola autoría ni intención.",
           "source_type": "documento ficcional original planejado"
         },
         {
           "evidence_id": "EVID-019-07",
-          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: Una ficha de escucha vincula un registro horario con una grabación que aún requiere selección, acceso y prueba reales.",
+          "claim": "Una segunda pieza aporta una coincidencia y una diferencia relacionadas con: La firma del reverso cambia la cadena de custodia de la primera carta, pero no identifica a quien la puso.",
           "source_type": "documento ficcional original planejado"
         },
         {
@@ -1061,7 +1081,7 @@
       "hypotheses": [
         {
           "hypothesis_id": "H1",
-          "statement": "H1: explicación mínima compatible con la ficha de escucha y con las dos fuentes disponibles, sin atribuir identidad no probada.",
+          "statement": "H1: explicación mínima compatible con la firma y con las dos fuentes disponibles, sin atribuir identidad no probada.",
           "acceptance": "PENDIENTE_DE_AUTORIA_Y_REVIEW"
         },
         {
